@@ -13,4 +13,8 @@ class Item
   def current_high_bid
     bids.values.max
   end
+
+  def close_bidding
+     bids.delete(self)
+  end
 end
